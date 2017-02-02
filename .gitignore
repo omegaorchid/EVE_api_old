@@ -137,4 +137,4 @@ ENV/
 
 .idea/
 manage.py
-templates/
+#templates/
