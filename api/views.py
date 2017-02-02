@@ -7,3 +7,5 @@ class View:
         template = 'home.html'
 
         return render(request=self, template_name=template, context=context)
+
+# todo Create template
