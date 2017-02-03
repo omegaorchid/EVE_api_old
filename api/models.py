@@ -1,7 +1,10 @@
 from django.db import models
 
 
-# Create your models here.
-class Questions(models.Model):
+class Join(models.Model):
+    email = models.EmailField()
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
-    pass
+    def __str__(self):
+        return "%s" % self.email
