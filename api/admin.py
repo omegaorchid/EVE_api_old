@@ -6,7 +6,7 @@ from .models import Join
 
 #  Admin page customisation
 class JoinAdmin(admin.ModelAdmin):
-    list_display = ['__str__', 'timestamp', 'updated']
+    list_display = ['__str__', 'first_name', 'timestamp', 'updated']
 
     class Meta:
         model = Join

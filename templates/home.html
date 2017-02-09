@@ -13,5 +13,10 @@
 {% endblock %}
 
 {% block content %}
+    <form method="post" action=""> {% csrf_token %}
+        {{ form.as_p }}
+    <input type="submit" value="Join" class="btn" />
+    </form>
+    <br/>
     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 {% endblock %}

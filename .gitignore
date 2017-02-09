@@ -138,3 +138,4 @@ ENV/
 .idea/
 manage.py
 #templates/
+/notes.ipynb
